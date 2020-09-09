@@ -1,0 +1,249 @@
+#root {
+  height: 100%;
+}
+
+.App {
+  text-align: center;
+  height: 100%;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    -webkit-animation: App-logo-spin infinite 20s linear;
+            animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@-webkit-keyframes App-logo-spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.header-nav {
+  background: #535353;
+}
+
+.header-nav img {
+  max-width: 45px;
+}
+
+.header-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.header-list li a {
+  color: white;
+  font-family: 'Bebas Neue', cursive;
+  text-decoration: none;
+}
+
+.header-list li a:hover {
+  color: #9e9d9d;
+}
+
+.banner-img {
+  background-image: url(./banner-dani.jpg);
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: 85%;
+  position: relative;
+  margin-top: -4em;
+  background-position: center;
+  z-index: -1;
+}
+
+@media (max-width: 768px) {
+  .banner-img {
+    background-image: url(/static/media/banner-dani.4cf2b45e.jpg);
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    margin-top: -3em;
+    background-position: center;
+    z-index: -1;
+  }
+}
+
+h1 {
+  padding-top: 5em;
+  text-shadow: 2px 2px #ffffff;
+}
+
+.numbers-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.numbers-title {
+  font-size: 4rem;
+  text-align: center;
+  padding: 0em 0em;
+  margin: 2rem 2rem;
+  font-family: 'Bebas Neue', cursive;
+}
+
+.numbers-tips {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media (max-width: 768px) {
+  .numbers-tips {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 2em;
+  }
+}
+
+.numbers-tips div {
+  width: 260px;
+  height: 260px;
+  border-radius: 33px 33px 33px 33px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1em;
+  background-color: #535353;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .numbers-tips div {
+    width: 140px;
+    height: 150px;
+    margin: 0.5rem;
+  }
+}
+
+.numbers-tips div p {
+  font-size: 4rem;
+  color: white;
+  margin: 0;
+  font-family: 'Bebas Neue', cursive;
+}
+
+@media (max-width: 768px) {
+  .numbers-tips div p {
+    font-size: 2rem;
+  }
+}
+
+.numbers-tips div p:not(:last-child) {
+  color: #FDDB3A;
+}
+
+.store-container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .store-container {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.store-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.store-top img {
+  max-width: 50%;
+}
+
+.store-bottom img {
+  max-width: 100%;
+}
+/*# sourceMappingURL=App.css.map */
