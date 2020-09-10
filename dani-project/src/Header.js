@@ -3,7 +3,7 @@ import logo from './logo.svg';
 
 const Header = () => {
 
-    const headerLinks = ["Profile", "Numebers", "F1 Cars", "Store", "GoPro"];
+    const headerLinks = ["Profile", "Numbers", "F1 Cars", "Store", "GoPro"];
 
     return (
         <div className='header-nav'>

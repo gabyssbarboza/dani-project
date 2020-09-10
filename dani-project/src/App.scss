@@ -1,7 +1,64 @@
+body{
+  color: #707070;
+  font-family: 'Bebas Neue', cursive;
+}
+
+
+
+
+
+
+
+
+
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #dec312;
+  border: 0px none #ffffff;
+  border-radius: 0px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #faf20f;
+}
+::-webkit-scrollbar-track {
+  background: #000000;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #000000;
+}
+::-webkit-scrollbar-track:active {
+  background: #000000;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+
+
+
+
+
 #root {
   height: 100%;
 }
 
+*,
+*:focus,
+*:hover {
+  outline: none;
+}
 
 .App {
   text-align: center;
@@ -47,6 +104,7 @@
 
 .header-nav {
   background: #535353;
+
   img {
     max-width: 45px;
   }
@@ -77,51 +135,88 @@
 }
 
 
-.banner-img {
-  background-image: url(./banner-dani.jpg);
-  height: 100%;
-  background-repeat: no-repeat;
-  background-size: 85%;
-  position: relative;
-  margin-top: -4em;
-  background-position: center;
-  z-index: -1;
-  @media (max-width: 768px) {
-    background-image: url(/static/media/banner-dani.4cf2b45e.jpg);
-    height: auto;
-    background-repeat: no-repeat;
-    background-size: contain;
+.banner {
+
+
+  &-text {
+    position: absolute;
+    top: 0;
+    left: 10em;
+
+    h1 {
+      color: #707070;
+      text-shadow: 2px 2px #ffffff;
+      margin: 0;
+      font-size: 10rem;
+      padding-top: 1em;
+      text-transform: uppercase;
+    }
+
+    h2{
+      text-shadow: 4px 3px #FDDB3A;
+      font-size: 45px;
+    margin: 0;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    width: 65%;
+    }
+  }
+
+
+  &-img {
+
+    img {
+      max-width: 100%;
+    top: -10rem;
     position: relative;
-    margin-top: -3em;
+
+    }
+
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 85%;
+    position: relative;
+    margin-top: -4em;
     background-position: center;
     z-index: -1;
 
+    @media (max-width: 768px) {
+      background-image: url(/static/media/banner-dani.4cf2b45e.jpg);
+      height: auto;
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: relative;
+      margin-top: -3em;
+      background-position: center;
+      z-index: -1;
+
+    }
+
+
+
   }
 
-
- 
 }
 
-h1 {
 
-  padding-top: 5em;
-  text-shadow: 2px 2px #ffffff;
-
-}
 
 .numbers {
   &-container {
+    text-align: center;
     display: flex;
     flex-direction: column;
     width: 100%;
+    margin: 5rem auto;
+    max-width: 1200px;
   }
 
   &-title {
-    
+    color: #707070;
     font-size: 4rem;
-    text-align: center;
+    text-align: initial;
     padding: 0em 0em;
-    margin: 2rem 2rem;
+    margin: 2rem 3rem;
     font-family: 'Bebas Neue', cursive;
 
   }
@@ -132,10 +227,11 @@ h1 {
     align-items: center;
     justify-content: center;
     flex-direction: row;
+
     @media (max-width: 768px) {
       flex-direction: row;
-    flex-wrap: wrap;
-    margin-bottom: 2em;
+      flex-wrap: wrap;
+      margin-bottom: 2em;
     }
 
     div {
@@ -148,6 +244,7 @@ h1 {
       align-items: center;
       justify-content: center;
       flex-direction: column;
+
       @media (max-width: 768px) {
         width: 140px;
         height: 150px;
@@ -155,16 +252,17 @@ h1 {
       }
 
       p {
-        
+
         font-size: 4rem;
         color: white;
         margin: 0;
         font-family: 'Bebas Neue', cursive;
+
         @media (max-width: 768px) {
-         font-size: 2rem;
+          font-size: 2rem;
         }
 
-        &:not(:last-child){
+        &:not(:last-child) {
           color: #FDDB3A;
         }
       }
@@ -174,27 +272,95 @@ h1 {
 
 
 .store {
-  &-container{
+
+  
+  &-container {
     max-width: 80%;
     margin: 0 auto;
+
     @media (max-width: 768px) {
       width: 100%;
       max-width: 100%;
     }
-  }
-
-  &-top{
-      display: flex;
-
-      img{
-        max-width: 50%;
-      }
-  }
-
-  &-bottom{
-    img{
-      max-width: 100%;
+    h1{
+      color: #707070;
+      text-transform: uppercase;
+      font-size: 4rem;
+      text-align: justify;
     }
-
   }
+
+  &-top {
+    display: flex;
+ 
+
+    img {
+      max-width: 50%;
+      transition: .5s ease;
+
+      &:hover{
+        box-shadow:
+1px 1px #373737,
+2px 2px #373737,
+3px 3px #373737,
+4px 4px #373737,
+5px 5px #373737,
+6px 6px #373737;
+-webkit-transform: translateX(-3px);
+transform: translateX(-3px);
+transition: .5s ease;
+      }
+
+    }
+  }
+
+  &-bottom {
+
+    transition: .5s ease;
+    img {
+      max-width: 100%;
+    
+
+
+      &:hover{
+        box-shadow:
+1px 1px #373737,
+2px 2px #373737,
+3px 3px #373737,
+4px 4px #373737,
+5px 5px #373737,
+6px 6px #373737;
+-webkit-transform: translateX(-3px);
+transform: translateX(-3px);
+transition: .5s ease;
+      }
+
+    }
+  }
+}
+
+.cars-container {
+  max-width: 1200px;
+  height: 500px;
+  margin: 0 auto;
+
+
+  @media (max-width: 768px) {
+    height: 65%;
+    padding: 1em;
+  }
+
+  h3{
+    text-transform: uppercase;
+      font-size: 4rem;
+      margin: 1rem 3rem;
+      text-align: justify;
+  }
+}
+
+.slick-slide img {
+  display: block;
+  max-width: 95%;
+  margin: 0 auto;
+
 }

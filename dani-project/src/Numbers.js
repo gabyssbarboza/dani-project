@@ -3,7 +3,9 @@ import React from 'react'
 const Numbers = ({title, first, second, third, four}) => {
     return (
         <div className="numbers-container">
+            <div>
             <p className="numbers-title">{title}</p>
+            </div>
             <div className="numbers-tips">
                 <div>
                     <p>{first}</p>
