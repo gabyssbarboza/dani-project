@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/dani-project/static/css/main.1620efd0.chunk.css",
+    "main.js": "/dani-project/static/js/main.ead2a2f5.chunk.js",
+    "main.js.map": "/dani-project/static/js/main.ead2a2f5.chunk.js.map",
+    "runtime-main.js": "/dani-project/static/js/runtime-main.76ca6ab2.js",
+    "runtime-main.js.map": "/dani-project/static/js/runtime-main.76ca6ab2.js.map",
+    "static/js/2.78315757.chunk.js": "/dani-project/static/js/2.78315757.chunk.js",
+    "static/js/2.78315757.chunk.js.map": "/dani-project/static/js/2.78315757.chunk.js.map",
+    "index.html": "/dani-project/index.html",
+    "precache-manifest.769baa5662526fbe372abad76e5df0c7.js": "/dani-project/precache-manifest.769baa5662526fbe372abad76e5df0c7.js",
+    "service-worker.js": "/dani-project/service-worker.js",
+    "static/css/main.1620efd0.chunk.css.map": "/dani-project/static/css/main.1620efd0.chunk.css.map",
+    "static/js/2.78315757.chunk.js.LICENSE.txt": "/dani-project/static/js/2.78315757.chunk.js.LICENSE.txt",
+    "static/media/HRT.png": "/dani-project/static/media/HRT.d74ebbad.png",
+    "static/media/banner-dani.jpg": "/dani-project/static/media/banner-dani.4cf2b45e.jpg",
+    "static/media/carro-renault.png": "/dani-project/static/media/carro-renault.52d1e0fd.png",
+    "static/media/foto1.png": "/dani-project/static/media/foto1.6ce43a3a.png",
+    "static/media/foto2.png": "/dani-project/static/media/foto2.a8df5641.png",
+    "static/media/foto3.png": "/dani-project/static/media/foto3.72afb9bc.png",
+    "static/media/logo.svg": "/dani-project/static/media/logo.a2d74923.svg",
+    "static/media/redbull.png": "/dani-project/static/media/redbull.81e813ab.png",
+    "static/media/tororosso.png": "/dani-project/static/media/tororosso.9838a37c.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.76ca6ab2.js",
+    "static/js/2.78315757.chunk.js",
+    "static/css/main.1620efd0.chunk.css",
+    "static/js/main.ead2a2f5.chunk.js"
+  ]
+}
